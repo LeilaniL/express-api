@@ -7,7 +7,7 @@ const app = express();
 const PORT = 3000;
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/CRMdb", {
+mongoose.connect("mongodb://localhost/lynda-crm", {
   useMongoClient: true
 });
 

@@ -1,15 +1,15 @@
 import mongoose from "mongoose";
 
-const Schema = mogoose.Schema;
+const Schema = mongoose.Schema;
 
-export const contactSchema = new Schema({
+export const ContactSchema = new Schema({
   firstName: {
-    type: String,
-    required: "Enter a first name"
+    type: String
+    // required: "Enter a first name"
   },
   lastName: {
-    type: String,
-    required: "Enter a last name"
+    type: String
+    // required: "Enter a last name"
   },
   email: {
     type: String
