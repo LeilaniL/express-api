@@ -12,3 +12,21 @@ export const addNewContact = (req, res) => {
     res.json(contact);
   });
 };
+
+export const getAllContacts = (req, res) => {
+  Contact.find({}, (err, contact) => {
+    if (err) {
+      res.send(err);
+    }
+    res.json(contact);
+  });
+};
+
+export const findContact = (req, res) => {
+  Contact.findById(req.params.contactId, (err, contact) => {
+    if (err) {
+      res.send(err);
+    }
+    res.json(contact);
+  });
+};
